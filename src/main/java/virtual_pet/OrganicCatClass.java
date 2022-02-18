@@ -27,7 +27,10 @@ public class OrganicCatClass extends CatClass implements Organic{
 
 
 
-
+    @Override
+    public String getStats(){
+        return super.getStats() + " Thirst Level: " + thirst + " Hunger Level: " + hunger + " Boredom Level: " + boredom;
+    }
 
 
 

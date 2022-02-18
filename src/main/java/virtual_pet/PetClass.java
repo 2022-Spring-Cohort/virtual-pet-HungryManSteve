@@ -28,4 +28,8 @@ public class PetClass {
     public String getName() {
         return name;
     }
+
+public String getStats(){
+        return ". " + name + " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+}
 }

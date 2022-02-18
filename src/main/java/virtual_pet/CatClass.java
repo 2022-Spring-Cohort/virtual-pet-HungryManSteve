@@ -47,6 +47,9 @@ public class CatClass extends PetClass {
         return levelOfMeow;
     }
 
-
+@Override
+    public String getStats(){
+        return super.getStats() + " Wild: " + wild + " Lives: " + lives;
+}
 
 }

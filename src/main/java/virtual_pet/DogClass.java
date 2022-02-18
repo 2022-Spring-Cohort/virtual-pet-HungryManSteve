@@ -33,6 +33,9 @@ public class DogClass extends PetClass{
         return breed;
     }
 
-
+    @Override
+    public String getStats(){
+        return super.getStats() + " Bark level: " + levelOfBark + " Breed Type: " + breed;
+    }
 
 }

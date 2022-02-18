@@ -16,7 +16,10 @@ public class RoboticDogClass extends DogClass implements Robot{
     int charge;
 
 
-
+    @Override
+    public String getStats(){
+        return super.getStats() + " Oil Level: " + oil;
+    }
 
 
     public void setOil(int oil) {

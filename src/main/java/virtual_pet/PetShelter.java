@@ -25,7 +25,7 @@ public class PetShelter {
             int i = 0;
             i = listPet.indexOf(currentPet);
             i++;
-            System.out.println(i + ". Hi I am " + currentPet.getName() + "!");
+            System.out.println(i + currentPet.getStats());
 
             //add numbers to assign to pets (i-loop maybe?)
         }

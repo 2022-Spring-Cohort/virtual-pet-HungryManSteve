@@ -14,7 +14,10 @@ public class RoboticCatClass extends CatClass implements Robot{
         this.softwareUpdate = softwareUpdate;
         this.oil = (int) (Math.random() * 100 + 1);
     }
-
+    @Override
+    public String getStats(){
+        return super.getStats() + " Oil Level: " + oil + " Charge Level: " + charge;
+    }
 
     public void setCharge(int charge) {
         this.charge = charge;

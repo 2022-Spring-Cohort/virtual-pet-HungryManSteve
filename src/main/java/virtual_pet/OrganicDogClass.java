@@ -14,7 +14,10 @@ public class OrganicDogClass extends DogClass implements Organic{
         this.tailWagging = tailWagging;
     }
 
-
+    @Override
+    public String getStats(){
+        return super.getStats() + "Thirst Level: " + thirst + " Hunger Level: " + hunger + " Boredom Level: " + boredom + " Tail Wagging? " + tailWagging;
+    }
 
 
 
