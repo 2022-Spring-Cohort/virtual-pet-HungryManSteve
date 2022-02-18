@@ -61,4 +61,9 @@ public class OrganicDogClass extends DogClass implements Organic{
     public void play() {
         boredom--;
     }
+    public void tick(){
+        boredom++;
+        hunger++;
+        thirst++;
+    }
 }

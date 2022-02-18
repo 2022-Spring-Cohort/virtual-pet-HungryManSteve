@@ -6,6 +6,7 @@ public class MenuSystem{
     Scanner scan = new Scanner(System.in);
 
     public String menuSystem() {
+
         return new String("What do you wish to do today? \n" +
                 "[*] Feed\n" +
                 "[*] Water\n" +

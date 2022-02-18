@@ -29,7 +29,11 @@ public class PetClass {
         return name;
     }
 
-public String getStats(){
+    public String getStats() {
         return ". " + name + " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+    }
+
+    public void tick() {
+    }
 }
-}
+

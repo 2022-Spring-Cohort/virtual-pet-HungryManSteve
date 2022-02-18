@@ -1,7 +1,9 @@
 package virtual_pet;
 
 public interface Robot {
-    public void oil();
+    public void oilUp();
 
-    void charge();
+    void chargeUp();
+
+
 }

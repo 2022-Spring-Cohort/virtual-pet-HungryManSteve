@@ -21,6 +21,7 @@ public class GameLoop {
             System.out.println();
             String answer = scan.nextLine();
             myMenu.menuLogic(answer);
+            defaultStart.petTick();
 
 
 

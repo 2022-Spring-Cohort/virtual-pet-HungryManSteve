@@ -39,12 +39,20 @@ public class RoboticDogClass extends DogClass implements Robot{
 
 
     @Override
-    public void oil() {
-
+    public void oilUp() {
+        oil = 100;
     }
+
 
     @Override
-    public void charge() {
-
+    public void chargeUp() {
+        charge = 100;
     }
+
+
+        public void tick(){
+            charge--;
+            oil--;
+        }
+
 }

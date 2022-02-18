@@ -67,4 +67,9 @@ public class OrganicCatClass extends CatClass implements Organic{
 
         else boredom -= 100;
     }
+    public void tick() {
+        boredom++;
+        hunger++;
+        thirst++;
+    }
 }
