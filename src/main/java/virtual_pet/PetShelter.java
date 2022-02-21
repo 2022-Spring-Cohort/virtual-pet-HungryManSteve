@@ -8,12 +8,14 @@ public class PetShelter {
     String petName = null;
     Boolean petBool = null;
 
+CageOrganic oCage;
 
     public void petShelterDefault() {
-        listPet.add(new OrganicDogClass(true, "Barry", "Border Collie", true));
+        listPet.add(new OrganicDogClass(true, "Barry", "Border Collie ", true));
         listPet.add(new RoboticDogClass(true, "C-17", "Roomba", false));
         listPet.add(new OrganicCatClass(true, "Pebbles"));
         listPet.add(new RoboticCatClass(true, "KillBot: KittyFriend", true));
+        oCage = new CageOrganic();
         System.out.println("Test");
     }
 
@@ -126,7 +128,22 @@ public class PetShelter {
 
 
             }
-        }}
+        oCage.tick();
+
+        }
+
+    public int getCageClean(){
+        return oCage.getCageClean();
+    }
+
+    public int deepClean() {
+        return oCage.cageClean -= 50;
+    }
+    public int smallClean(){
+        return oCage.cageClean -= 10;
+    }
+
+}
 
 
 

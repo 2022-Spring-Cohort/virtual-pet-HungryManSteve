@@ -70,16 +70,14 @@ public class MenuSystem{
             //had to use constructor to "move over" class
             //now using _petShelter as a _private class
             System.out.println("You see the pet stats");
-        } else if (answer.equalsIgnoreCase("Clean")){
-            System.out.println("You cleaned the cages");
         }else if (answer.equalsIgnoreCase("clean")){
+            _petShelter.deepClean();
             System.out.println("You cleaned the cages.");
-            _cageOrganic.deepClean();
-            _cageOrganic.getCageClean();
+
         }else if (answer.equalsIgnoreCase("walko")){
 
             System.out.println("You walked the Dogs");
-            _cageOrganic.deepClean();
+            _petShelter.smallClean();
         }else if (answer.equalsIgnoreCase("walkr")){
             System.out.println("You walked the Robots??");
             _petShelter.petChargeDown();
@@ -100,7 +98,7 @@ public class MenuSystem{
 
 
 
-    public MenuSystem(PetShelter petShelter, CageOrganic _cageOrganic) {
+    public MenuSystem(PetShelter petShelter) {
         _petShelter = petShelter;
         //passing gameloop petshelter here
     }
