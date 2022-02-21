@@ -117,6 +117,7 @@ public class PetShelter {
         for (PetClass currentPet : listPet) {
                 currentPet.tick();
 
+
             }
         }}
 

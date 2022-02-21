@@ -13,15 +13,18 @@ public class GameLoop {
         defaultStart.petShelterDefault();
         defaultStart.petStats();
         var myMenu = new MenuSystem(defaultStart);
-
+        var _cageOrganic = new CageOrganic();
         while(true){
 
 
             System.out.println(myMenu.menuSystem());
             System.out.println();
+            System.out.println(_cageOrganic.getCageClean());
             String answer = scan.nextLine();
             myMenu.menuLogic(answer);
             defaultStart.petTick();
+            _cageOrganic.tick();
+
 
 
 
