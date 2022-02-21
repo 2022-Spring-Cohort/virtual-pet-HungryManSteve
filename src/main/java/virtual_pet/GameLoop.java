@@ -12,14 +12,15 @@ public class GameLoop {
         PetShelter defaultStart = new PetShelter();
         defaultStart.petShelterDefault();
         defaultStart.petStats();
-        var myMenu = new MenuSystem(defaultStart);
         var _cageOrganic = new CageOrganic();
+        var myMenu = new MenuSystem(defaultStart, _cageOrganic);
+
         while(true){
 
 
             System.out.println(myMenu.menuSystem());
             System.out.println();
-            System.out.println(_cageOrganic.getCageClean());
+            System.out.println("The cages are this dirty: " + _cageOrganic.getCageClean());
             String answer = scan.nextLine();
             myMenu.menuLogic(answer);
             defaultStart.petTick();

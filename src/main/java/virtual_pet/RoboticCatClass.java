@@ -59,6 +59,9 @@ public class RoboticCatClass extends CatClass implements Robot{
         charge = 100;
     }
 
+    @Override
+    public void chargeDown() { charge -= 20; }
+
     public void tick(){
         charge--;
         oil--;

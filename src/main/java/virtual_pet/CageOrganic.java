@@ -17,9 +17,8 @@ public class CageOrganic {
 
 
     public void tick() {
-        this.cageClean += 5;
+        this.cageClean += 10;
     }
-    public void deepClean() {
-        this.cageClean -= 20;
-    }
+    public void deepClean() { this.cageClean -= 20; }
+    public void smallClean() { this.cageClean -= 2000; }
 }

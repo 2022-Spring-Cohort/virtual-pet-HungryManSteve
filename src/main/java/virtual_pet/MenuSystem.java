@@ -1,6 +1,5 @@
 package virtual_pet;
 
-import java.awt.*;
 import java.util.Scanner;
 
 public class MenuSystem{
@@ -18,16 +17,19 @@ public class MenuSystem{
                 "[*] Add\n" +
                 "[*] Adopt\n" +
                 "[*] Clean\n" +
+                "[*] Walko\n" +
+                "[*] Walkr\n" +
                 "[*] Stats");
 
     }
-//    CageOrganic _cageOrganic = new CageOrganic(int cageClean);
+//    CageOrganic _cageOrganic = new CageOrganic();
     public String cageCleanLevel(){
         return new String("Cage's clean level: " + _cageOrganic.getCageClean());
 
     }
 
     public void menuLogic(String answer) {
+        var _cageOrganic = new CageOrganic();
         //passing answer from virtual_pet.GameLoop
         if (answer.equalsIgnoreCase("feed")) {
             _petShelter.petFeeder();
@@ -74,6 +76,14 @@ public class MenuSystem{
             System.out.println("You cleaned the cages.");
             _cageOrganic.deepClean();
             _cageOrganic.getCageClean();
+        }else if (answer.equalsIgnoreCase("walko")){
+
+            System.out.println("You walked the Dogs");
+            _cageOrganic.deepClean();
+        }else if (answer.equalsIgnoreCase("walkr")){
+            System.out.println("You walked the Robots??");
+            _petShelter.petChargeDown();
+
         }
 
 
@@ -90,7 +100,7 @@ public class MenuSystem{
 
 
 
-    public MenuSystem(PetShelter petShelter) {
+    public MenuSystem(PetShelter petShelter, CageOrganic _cageOrganic) {
         _petShelter = petShelter;
         //passing gameloop petshelter here
     }

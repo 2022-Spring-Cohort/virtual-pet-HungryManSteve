@@ -112,6 +112,13 @@ public class PetShelter {
                 ((Robot) currentPet).chargeUp();
         }
     }
+    public void petChargeDown() {
+        for (PetClass currentPet : listPet) {
+            if (currentPet instanceof Robot)
+                ((Robot) currentPet).chargeDown();
+
+        }
+    }
 
     public void petTick() {
         for (PetClass currentPet : listPet) {
